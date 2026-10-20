@@ -3,6 +3,12 @@ import json
 import os
 import threading
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+os.environ["TF_NUM_INTRAOP_THREADS"] = "1"
+os.environ["TF_NUM_INTEROP_THREADS"] = "1"
+os.environ["OMP_NUM_THREADS"] = "1"
+os.environ["TF_CPP_MIN_LOG_LEVEL"] = "2"
+
 import numpy as np
 import tensorflow as tf
 from fastapi import FastAPI, File, HTTPException, UploadFile
