@@ -1,9 +1,7 @@
 fastapi
-uvicorn[standard]
-python-multipart
-huggingface_hub
-tensorflow>=2.16
+uvicorn
+tensorflow
 numpy
 Pillow
-opencv-python-headless
- 
+huggingface_hub
+python-multipart
