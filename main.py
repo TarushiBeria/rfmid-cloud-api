@@ -10,7 +10,7 @@ from fastapi.middleware.cors import CORSMiddleware
 from huggingface_hub import hf_hub_download
 from PIL import Image, UnidentifiedImageError
 
-HF_REPO_ID = os.environ.get("HF_REPO_ID", "YOUR_USERNAME/rfmid-retinal-classifier")
+HF_REPO_ID = os.environ.get("HF_REPO_ID", "tarushiberia/rfmid-retinal-classifier")
 MODEL_FILE = os.environ.get("MODEL_FILE", "rfmid_model.keras")
 
 # MUST match the training notebook.
