@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+python-multipart
+huggingface_hub
+tensorflow>=2.16
+numpy
+Pillow
+opencv-python-headless
+ 
