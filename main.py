@@ -20,7 +20,7 @@ RESCALE_BY_255 = os.environ.get("RESCALE_BY_255", "true").lower() == "true"
 OUTPUT_IS_LOGITS = os.environ.get("OUTPUT_IS_LOGITS", "false").lower() == "true"
 THRESHOLD = float(os.environ.get("THRESHOLD", "0.5"))
 
-ALLOWED_ORIGINS = os.environ.get("ALLOWED_ORIGINS", "https://tarushiberia.github.io").split(",")
+ALLOWED_ORIGINS = os.environ.get("ALLOWED_ORIGINS", "*").split(",")
 MAX_BYTES = 10 * 1024 * 1024
 ALLOWED_TYPES = {"image/jpeg", "image/png", "image/webp"}
 
